@@ -16,7 +16,7 @@ export default async function Home() {
             <Link href={`snippet/${snippet.id}`} key={snippet.id} className="bg-white rounded shadow-md p-4 text-black">
               <h2 className="text-lg font-semibold mb-2">{snippet.title}</h2>
               <pre className="whitespace-pre-wrap overflow-x-auto">
-                <code>
+                <code className="line-clamp-2">
                   {snippet.code}
                 </code>
               </pre>
